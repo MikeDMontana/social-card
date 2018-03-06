@@ -3,7 +3,7 @@
   background-color: yellow;
 }
 
-.wrapper {
+.BlockNavs {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 100px 100px 100px;
@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 64pt;
-  margin: 1em 0em 0em 0em;
+  margin: 0em;
   border: 1px solid black;
   padding: 10px;
 }
