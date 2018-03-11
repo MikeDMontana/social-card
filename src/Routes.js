@@ -14,17 +14,16 @@ export const makeMainRoutes = () => {
       <Route render={({ location }) => (
       <div className="mainContainer">
         <Header />
-          <TransitionGroup>
-            <CSSTransition key={location.key} classNames="fade" timeout={300}>
-              <Switch location={location}>
-                <Route exact path="/" render={(props) => <App />} />
-                <Route exact path="/a" render={(props) => <A />} />
-                <Route exact path="/b" render={(props) => <B />} />
-                <Route exact path="/c" render={(props) => <C />} />
-              </Switch>
-            </CSSTransition>
-          </TransitionGroup>
-
+        <TransitionGroup>
+          <CSSTransition key={location.key} classNames="fade" timeout={300}>
+            <Switch location={location}>
+              <Route exact path="/" render={(props) => <App />} />
+              <Route exact path="/a" render={(props) => <A />} />
+              <Route exact path="/b" render={(props) => <B />} />
+              <Route exact path="/c" render={(props) => <C />} />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
       </div>
       )}
       />
